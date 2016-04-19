@@ -296,10 +296,67 @@
 <!-- seventh slide group:: results -->
 
 				<section>
-					results slides go here...
+					<h2>Our Algorithm</h2>
+					<p>
+					  Let K be a knot, with a given planar projection drawing K.
+				  </p>
+					<ul>
+						<li>Choose an orientation of the knot</li>
+					  <li>Choose an arc of the knot which has at least one overpass.
+							This will be our first bridge.
+						</li>
+						<li>
+							Label each of the crossings which is not part of this first bridge
+							by integers in increasing order along the direction of travel.
+						</li>
+					</ul>
 				</section>
-
-
+					<section>
+						<p>The part that you repeat:</p>
+						<p>
+							Running through the crossings that are not part of the current
+							bridge set, in increasing order of label:
+						</p>
+						<ul>
+							<li>
+								[Drag] Look for a “drag the underpass” move which has no
+								interference and do it. If there is a choice, use the option
+								which drags the underpass along the direction of travel on K.
+							</li>
+							<li>
+								[Simplify] Look for any resulting type I or type II
+								Reidemeister moves which simplify the presentation and use
+								them until none are left.
+							</li>
+						</ul>
+						<p>
+							If the bit above in the loop cannot be done at all, take the
+							crossing with the smallest remaining number and declare its
+							overpassing arc as another bridge.
+						</p>
+					</section>
+				</section>
+				<section>
+					<section class="slide-in fade-out">
+						<h3>The example \(8_{10}\)</h3>
+						<img src="images/8-10process1.png" width="50%"><img>
+					</section>
+					<section class="fade">
+						<h3>The example \(8_{10}\)</h3>
+						<img src="images/8-10process2.png" width="50%"><img>
+					</section>
+					<section class="fade">
+						<h3>The example \(8_{10}\)</h3>
+						<img src="images/8-10process3.png" width="50%"><img>
+					</section>
+					<section class="fade">
+						<h3>The example \(8_{10}\)</h3>
+						<img src="images/8-10process4.png" width="50%"><img>
+					</section>
+					<section class="fade-in slide-out">
+						<h3>The example \(8_{10}\)</h3>
+						<img src="images/8-10process5.png" width="50%"><img>
+					</section>
 			</div>
 
 		</div>
